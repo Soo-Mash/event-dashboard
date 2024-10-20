@@ -1,29 +1,43 @@
-![image](/public/eventogy-logo.svg)
+## SIMON JONES submission - Evetogy React + Next.js
+This is a simple grid dislay of fetched 'events' data from an API, as part of the interview process for Eventogy.
 
-# React Tech Task
+### Tech stack
+Main technologies in use are
+- React (FE framework)
+- Nextjs (FE framework)
+- Typecript (language)
+- MaterialUI (component library)
+- Prettier (code formatting)
 
-## OVERVIEW
-
-You are tasked to build a simple interface against a slice of a REST API by forking this GitHub repository containing the foundation of a React + Next.js application.
-
-- API Endpoint - https://www.eventogy.com/api/events.json
-- For images, feel free to use an open API like unsplash or picsum to get a unique image for each card
-- Design Mock Up:
-
-![dashboard](https://github.com/user-attachments/assets/636d4899-afb2-4c48-9f42-1e4a56292e0c)
+### To run locally
+- Clone repo locally with HTTPS or SSH method
+- From the root folder, run `npm install` to install all required dependencies.
+- Run in terminal: `npm run dev`
+- Open localhost port as indicated
 
 
-## OBJECTIVES
+### Noteworthy features: user experience as primary focus
+- Fully responsive from mobile to desktop screen widths
+- Search by event name, location name, or address
+- Sort by either createdAt or updatedAt
+- Pin & unpin items to the beginning of the list, immune to sorting mode
+- Pagination implemented, but only cosmetically (API returned static data, was not actually paginated)
+- Hover animations to indicate interactability (not actually interactable here, since assignment was simply to display cards, not navigate to other pages)
 
-Demonstrate that you're capable of planning and structuring your code in a way that allows for reusable, scalable, and well-thought-out components that will interact with a RESTful public API.
-Demonstrate your attention to detail in the presentation layer - does it work as expected, is it responsive, and are there any finishing touches.
+### Noteworthy features: contributing developers as primary focus
+- Re-usable components adhered to in modern React standards, very little duplicated code.
+- Prettier formatting implemented for readibilty & consistent code structure.
 
-## SPECIFICATIONS
+### Improvements that could be made:
+- Add ability to add a new event (API did not have POST facilities)
+- Improve visual aesthetic of card components, particularly with whitespace that is present when pieces of data are empty from the API response for some items
+- Add ability to trigger a re-fetch of data
+- Add user-centric error handling for when API fails
 
-You can (and should) use any and all resources at your disposal to complete the task. We suggest using style libraries like **Tailwind** and prebuilt component libraries, like **Shadcn**, rather than spending time manually styling the page.
 
-We’re looking to see how much you can achieve in 2, 3 hours, but feel free to spend extra time in order to complete a subtask or fix a bug. Make sure you commit your project to the forked Git repository and periodically commit as you progress in the task.
+## Screenshots:
+![image](https://github.com/user-attachments/assets/662ff9d3-e84f-4feb-854f-6863c261cdd0)
+![image](https://github.com/user-attachments/assets/b84c6871-5fe2-434e-8a41-68ea7f04b65c)
+![image](https://github.com/user-attachments/assets/f8d75647-52ce-4cd7-a731-7c3cd46fd395)
 
-### Bonus points
 
-Use UI interactive effects for elements such as loading the event cards. Convert the project to Typescript if you're feeling extra brave.
